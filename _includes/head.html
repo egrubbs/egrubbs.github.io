@@ -20,10 +20,6 @@
         margin: 3vh 0 0.5vh 0;
     }
 
-    ol {
-        margin: 0 0 0 0;
-    }
-    
     p {
         margin: 2vh 0 2vh 0;
     }
@@ -86,11 +82,35 @@
         text-decoration: underline;
     }
 
+    .flag-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .flag-content {
+            max-width: 820px;
+            width: 98vw;
+
+            ol {
+                margin: 0 0 0 0;
+                padding: 0 0 0 30px;
+            }
+        }
+    }
+
     .flag-image {
         display: block;
         margin: 0 auto 2vh auto;
         width: 100%;
         height: auto;
+    }
+
+    .flags-payment-address {
+        margin: 5px 0 0 0;
+        width: fit-content;
+        white-space: pre;
+        border: 3px solid #555555;
+        border-radius: 10px;
+        padding: 5px;
     }
 
     .flag-form-link {
@@ -119,7 +139,7 @@
 
     @media (max-width: 800px) and (orientation: portrait) {
         body {
-            font-size: 5vw;
+            font-size: 4.5vw;
         }
         header h1 {
             font-size: 10vw;
